@@ -4,8 +4,8 @@ var amp;
 var scale = 1.0;
 
 function setup() {
-    createCanvas(800, 600);
-    background(191, 139, 133);
+    createCanvas(1000, 1000);
+    background(28, 55, 56);
     // Create an audio input and start it
     mic = new p5.AudioIn();
     mic.start();
@@ -18,13 +18,13 @@ function setup() {
 function draw() {
     // Draw a background that fades to black
     noStroke();
-    fill(191, 139, 133, 10);
+    fill(28, 55, 56, 10);
     rect(0, 0, width, height);
     // The getLevel() method returns values between 0 and 1,
     // so map() is used to convert the values to larger numbers
     scale = map(amp.getLevel(), 0, 0.5, 10, width);
     // Draw the circle based on the volume
-    fill(28, 55, 56);
+    fill(233, 175, 163);
     ellipse(width / 2, height / 2, scale, scale);
     // ellipse(width / 2, height / 2, width, width);
 }
