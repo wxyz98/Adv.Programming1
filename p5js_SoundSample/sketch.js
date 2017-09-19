@@ -4,7 +4,7 @@ var amp;
 var scale = 1.0;
 
 function setup() {
-    createCanvas(2000, 1000);
+    createCanvas(1000, 800);
     background(28, 55, 56);
     // Create an audio input and start it
     mic = new p5.AudioIn();
